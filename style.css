@@ -3,6 +3,9 @@
     --cor-menu: #036;
     --cor-menu-lateral: #dcdcdc;
     --cor-menu-lateral-itens: white;
+    --cor-painel-novidades: #f5dcdc;
+    --cor-panel-mais-vendidos: #dcdcf5;
+
 }
 
 .sacola {
@@ -44,7 +47,7 @@ body {
 
 .container {
     margin: 0 auto;
-    width: 90%;
+    width: 950px;
 }
 
 header {
@@ -124,17 +127,56 @@ header {
 }
 
 .novidades {
-    background-color: #f5dcdc;
+    background-color: var(--cor-painel-novidades);
 }
 
 .mais-vendidos {
-    background-color: #dcdcf5;
+    background-color: var(--cor-panel-mais-vendidos);
 }
 
 .painel li {
     display: inline-block;
     vertical-align: top;
-    width: 140px;
+    width: 130px;
     margin: 2px;
     padding-bottom: 10px;
 }
+
+footer {
+    background-image: url(../img/fundo-rodape.png);
+    clear: both;
+    padding: 20px 0;
+    position: relative;
+}
+
+.social a{
+    height: 32px;
+    width: 32px;
+    display: block;
+    text-indent: -9999px;
+}
+
+.social a[href*="facebook.com"] {
+    background-image: url(../img/facebook.png);
+}
+
+
+.social a[href*="twitter.com"] {
+    background-image: url(../img/twitter.png);
+}
+
+.social a[href*="googleplus.com"] {
+    background-image: url(../img/googleplus.png);
+}
+
+.social li {
+float: left;
+margin-left: 25px;
+}
+
+.social {
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+

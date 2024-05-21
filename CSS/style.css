@@ -2,7 +2,7 @@
     --cor-base: #333;
     --cor-menu: #036;
     --cor-menu-lateral: #dcdcdc;
-    --cor-menu-lateral-itens: #fff;
+    --cor-menu-lateral-itens: white;
     --cor-menu-lateral-itens-hover: #007dc6;
     --cor-menu-lateral-itens-active: #f00;
     --cor-painel-novidades: #f5dcdc;
@@ -10,16 +10,18 @@
     --cor-painel-titulo: rgba(0, 0, 0, 0.5);
     --cor-painel-novidades-grad: #bebef4;
     --cor-panel-mais-vendidos: #dcdcf5;
-    --cor-panel-mais-vendidos-grad: #f4bebe;    
+    --cor-panel-mais-vendidos-grad: #f4bebe;
+
 }
 
 .sacola {
-    background: url(../img/sacola.png) no-repeat top right;
+    background: url(img/sacola.png) no-repeat top right;
     font-size: 14px;
     padding-right: 35px;
-    text-align: right;
-    width: 140px;
     padding-top: 8px;
+    text-align: center;
+    width: 200px;
+    padding-bottom: 25px;
     position: absolute;
     top: 0;
     right: 0;
@@ -35,18 +37,18 @@
     font-size: 15px;
 }
 
+.menu-opcoes a {
+    color: var(--cor-menu);
+}
+
 .menu-opcoes ul li {
     display: inline;
     margin-left: 20px;
 }
 
-.menu-opcoes a {
-    color: var(--cor-menu);
-}
-
 body {
     color: var(--cor-base);
-    font-family: "Roboto", sans-serif;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 }
 
 .container {
@@ -74,6 +76,11 @@ header {
     clear: left;
 }
 
+.busca form,
+.menu-departamentos h2 {
+    margin: 10px;
+}
+
 .menu-departamentos li {
     background-color: var(--cor-menu-lateral-itens);
     margin-bottom: 1px;
@@ -85,16 +92,11 @@ header {
     text-decoration: none;
 }
 
-.busca form,
-.menu-departamentos h2 {
-    margin: 10px;
-}
-
 .busca input {
     vertical-align: middle;
 }
 
-.busca input[type="search"] {
+.busca input [type="search"] {
     width: 170px;
 }
 
@@ -116,14 +118,6 @@ header {
 
 .mais-vendidos {
     float: right;
-}
-
-.painel li {
-    display: inline-block;
-    vertical-align: top;
-    width: 135px;
-    margin: 2px;
-    padding-bottom: 10px;
 }
 
 .painel h2 {
@@ -149,6 +143,14 @@ header {
     background: linear-gradient(var(--cor-panel-mais-vendidos), var(--cor-panel-mais-vendidos-grad));
 }
 
+.painel li {
+    display: inline-block;
+    vertical-align: top;
+    width: 130px;
+    margin: 2px;
+    padding-bottom: 10px;
+}
+
 footer {
     background-image: url(../img/fundo-rodape.png);
     clear: both;
@@ -156,7 +158,7 @@ footer {
     position: relative;
 }
 
-.social a {
+.social a{
     height: 32px;
     width: 32px;
     display: block;
@@ -167,17 +169,18 @@ footer {
     background-image: url(../img/facebook.png);
 }
 
+
 .social a[href*="twitter.com"] {
     background-image: url(../img/twitter.png);
 }
 
-.social a[href*="google.com"] {
+.social a[href*="googleplus.com"] {
     background-image: url(../img/googleplus.png);
 }
 
 .social li {
-    float: left;
-    margin-left: 25px;
+float: left;
+margin-left: 25px;
 }
 
 .social {
@@ -208,4 +211,24 @@ footer {
 
 .menu-departamentos li li a::before {
     content: '- ';
+}
+
+.painel li:hover{
+    background-color: rgba(255,255,255, 0.8);
+    box-shadow: 0 0 5px #333;
+    transition: 0.7s ease-in;
+    transform: scale(1.2) rotate(-5deg); 
+}
+
+.painel li:nth-child(2n):hover {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.painel li {
+    display: inline-block;
+    vertical-align: top;
+    width: 130px;
+    margin: 2px;
+    padding-bottom: 10px;
+    transition: 0.7s ease-out;
 }

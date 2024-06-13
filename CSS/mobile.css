@@ -25,7 +25,7 @@ header h1 img {
 }
 
 .busca,
-.menu-departamentos,
+.menu-departamentos, 
 .destaque img {
     margin-right: 0;
     width: 100%;
@@ -43,7 +43,8 @@ header h1 img {
     width: 100%;
 }
 
-.pause, .play {
+.pause,
+.play {
     display: none;
 }
 
@@ -80,7 +81,7 @@ header h1 img {
     }
 
     .busca, .menu-departamentos {
-        margin-right: 1%;
+        margin-left: 1%;
         width: 30%;
     }
 
@@ -94,3 +95,4 @@ header h1 img {
         width: 69%;
     }
 }
+

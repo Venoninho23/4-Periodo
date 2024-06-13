@@ -1,4 +1,4 @@
-.grid-container {
+.grid-container{
     display: grid;
     grid-template-columns: auto;
     gap: 10px;
@@ -10,7 +10,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-fieldset {
+fieldset{
     margin-bottom: 10px;
     background-color: antiquewhite;
     border-radius: 5px;
@@ -40,16 +40,16 @@ fieldset legend {
 
 .grid-button-container input[type=submit] {
     background-color: blue;
-} 
+}
 
 .grid-button-container input[type=reset] {
     background-color: orangered;
-} 
+}
 
 .grid-header-container {
     display: grid;
     grid-template-areas: 'top-left top-right';
-    border-bottom: rgb(165, 155, 141) 5px solid;
+    border-bottom: rgb(161, 157, 151) solid;
     margin-bottom: 5px;
 }
 
